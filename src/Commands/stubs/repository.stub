@@ -1,1 +1,10 @@
 <?php
+
+namespace DummyNamespace;
+
+use Imdhemy\Repovel\Contracts\AbstractRepository as Repository;
+
+class DummyClass extends Repository
+{
+    //
+}
