@@ -12,7 +12,7 @@ Actually, you delegate the application logic to a common service (the service la
 Run the following command from you terminal:
 
 ```
-composer require imdhemy\repovel
+composer require imdhemy/repovel
 ```
 
 ## Usage
