@@ -1,0 +1,26 @@
+{
+    "name": "imdhemy/repovel",
+    "description": "Implement Repository pattern and add Services layer for Laravel applications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamad Eldhemy",
+            "email": "imdhemy@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imdhemy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imdhemy\\RepovelServiceProvider"
+                ]
+            }
+        }
+}
