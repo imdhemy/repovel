@@ -2,6 +2,7 @@
     "name": "imdhemy/repovel",
     "description": "Implement Repository pattern and add Services layer for Laravel applications",
     "license": "MIT",
+    "keywords": ["laravel", "repository", "service"],
     "authors": [
         {
             "name": "Mohamad Eldhemy",
@@ -22,5 +23,7 @@
                 "Imdhemy\\Repovel\\RepovelServiceProvider"
                 ]
             }
-        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
