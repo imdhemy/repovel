@@ -1,2 +1,18 @@
 <?php
 
+namespace DummyNamespace;
+
+use Imdhemy\Repovel\Contracts\AbstractService as Service;
+
+class DummyClass extends Service
+{
+    /**
+     * Execute service
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        //
+    }
+}

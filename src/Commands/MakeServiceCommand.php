@@ -52,11 +52,6 @@ class MakeServiceCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        if ($this->option('request')) {
-            $request = Str::studly(class_basename($this->argument('name')));
-            $this->request = "{$request}Request";
-            return __DIR__ . '/stubs/service-with-request.stub';
-        }
         return __DIR__.'/stubs/service.stub';
     }
 
@@ -78,7 +73,8 @@ class MakeServiceCommand extends GeneratorCommand
      */
     protected function createRequest()
     {
-        $this->call('make:request', ['name' => $this->request]);
+        $request = Str::studly(class_basename($this->argument('name')));
+        $this->call('make:request', ['name' => "{$request}Request"]);
     }
 
     /**
