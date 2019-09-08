@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Imdhemy\\": "src/"
+            "Imdhemy\\Repovel\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Imdhemy\\RepovelServiceProvider"
+                "Imdhemy\\Repovel\\RepovelServiceProvider"
                 ]
             }
         }

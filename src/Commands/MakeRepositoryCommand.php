@@ -1,5 +1,5 @@
 <?php
-namespace Imdhemy\Commands;
+namespace Imdhemy\Repovel\Commands;
 
 use Illuminate\Console\Command;
 

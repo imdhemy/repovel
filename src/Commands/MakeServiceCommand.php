@@ -1,6 +1,6 @@
 <?php
 
-namespace Imdhemy\Commands;
+namespace Imdhemy\Repovel\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -55,7 +55,7 @@ class MakeServiceCommand extends GeneratorCommand
         if ($this->option('request')) {
             $request = Str::studly(class_basename($this->argument('name')));
             $this->request = "{$request}Request";
-            // TODO: return service-with-request stub
+            return __DIR__ . '/stubs/service-with-request.stub';
         }
         return __DIR__.'/stubs/service.stub';
     }
@@ -68,7 +68,7 @@ class MakeServiceCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Http\Services';
+        return $rootNamespace. config('repovel.services.namespace');
     }
 
     /**
@@ -89,7 +89,7 @@ class MakeServiceCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['force', null, InputOption::VALUE_NONE, 'Create the class even if the model already exists.'],
+            ['force', null, InputOption::VALUE_NONE, 'Create the class even if the service already exists.'],
             ['request', 'r', InputOption::VALUE_NONE, 'Create service class and a request class.'],
         ];
     }

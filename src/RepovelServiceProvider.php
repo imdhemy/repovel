@@ -1,9 +1,9 @@
 <?php
-namespace Imdhemy;
+namespace Imdhemy\Repovel;
 
 use Illuminate\Support\ServiceProvider;
-use Imdhemy\Commands\MakeRepositoryCommand;
-use Imdhemy\Commands\MakeServiceCommand;
+use Imdhemy\Repovel\Commands\MakeRepositoryCommand;
+use Imdhemy\Repovel\Commands\MakeServiceCommand;
 
 class RepovelServiceProvider extends ServiceProvider
 {
